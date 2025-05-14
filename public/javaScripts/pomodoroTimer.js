@@ -34,7 +34,7 @@ sortBreak.addEventListener("click",function(){
     pomodoroTimer.classList.remove("select");
     longBreak.classList.remove("select");
     sortBreak.classList.add("select");
-    localStorage.setItem("time",2);
+    localStorage.setItem("time",5);
     if((localStorage.getItem("time")).length!=2){
         minute.innerText = `0${localStorage.getItem("time")}` ;
     }else{
