@@ -5,7 +5,7 @@ let output = document.querySelector(".translatorOutput");
 let second  = document.querySelector(".second");
 
 button.addEventListener("click",function(){
-    if(e.key=="Enter" && input.value.trim()!=""){
+    if(input.value.trim()!=""){
     socket.emit("translate",input.value,second.value);
     output.innerText = "loading..."
     }
