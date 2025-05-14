@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    font-weight: 600;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    min-height: fit-content;
+    min-width: fit-content;
+    background-color: #00B0FF;
+   
+}
+.header{
+    height: 3.5rem;
+    width: 100vw;
+    background-color:rgb(18, 17, 17);
+    color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 100;
+}
+.fakeHeader{
+     height: 3.5rem;
+    width: 100vw;
+}
+.optionBox{
+    height: 100%;
+    width: 80%;
+    /* border: 1px solid rgb(255, 255, 255); */
+    display: flex;
+    justify-content: flex-end;
+    overflow: auto;
+}
+
+.option,.mobileOption{
+    height: 100%;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding-right: 1rem;
+    /* border: 1px solid white; */
+}
+.mobileOption img{
+    height: 2.5rem;
+}
+
+.logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    flex-shrink: 0;
+}
+.logo img{
+    height: 50%;
+}
+.page1{
+    height: 80vh;
+    width: 100vw;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timerBox{
+    height: 25rem;
+    width: 90vw;
+    max-width: 25rem;
+    background-color: rgba(255, 255, 255, 0.374);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.motivationBox{
+    padding: 1rem;
+    width: 95vw;
+}
+.timeOption{
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    justify-content: space-evenly;
+}
+
+.options{
+    height: 2rem;
+    width: calc(100%/3.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(0, 0, 0, 0.138); */
+}
+select{
+    height: 100%;
+    width: 8rem;
+}
+input{
+    height: 3rem;
+    width: 6rem;
+    text-align: center;
+    font-size: 1.1rem;
+    outline: none;
+    border-radius: 3px;
+    border: 0.1px solid black;
+    
+}
+input::-webkit-inner-spin-button{
+    display: none;
+}
+.start{
+    height: 3rem;
+    width: 8rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.437);
+    backdrop-filter: blur(20px);
+    border-radius: 3px;
+}
+@media (max-width:800px){
+    .option{
+        display: none;
+    }
+    .mobileOption{
+        font-size: 0.8rem;
+        width: 9rem;
+        justify-content: flex-end;
+    }
+    .card{
+        width: 90vw;
+    }
+    .timeOption{
+    font-size: 0.9rem;
+}
+}
+.motivationBox{
+    height: fit-content;
+}
+.translatorInput{
+    height: 2.5rem;
+    width: 90vw;
+}
+.translatorOutput{
+    min-height: fit-content;
+    height: 20rem;
+    width: 95vw;
+    text-align: center;
+    /* background-color: white; */
+}
+.button{
+    height: 3.5rem;
+    font-size: 1.2rem;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+    outline: none;
+    border: none;
+}
